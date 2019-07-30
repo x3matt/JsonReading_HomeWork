@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception{
-        Person[] persons = personListMaker("Persons.json");
+        Person[] persons = personArrayMaker("Persons.json");
         for (int i=0;i<persons.length;i++){
             System.out.println(persons[i]);
         }
     }
-    public static Person[] personListMaker(String fileName) throws Exception{
+    public static Person[] personArrayMaker(String fileName) throws Exception{
         ObjectMapper mapper = new ObjectMapper();
         List<Person> list = new ArrayList<>();
 
